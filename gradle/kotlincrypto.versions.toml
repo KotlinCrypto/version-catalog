@@ -1,0 +1,24 @@
+[versions]
+core = "0.2.0"
+hash = "0.2.1"
+macs = "0.2.1"
+secureRandom = "0.1.0"
+
+[libraries]
+# https://github.com/KotlinCrypto/core
+core-common = { module = "org.kotlincrypto.core:common", version.ref = "core" }
+core-digest = { module = "org.kotlincrypto.core:digest", version.ref = "core" }
+core-mac = { module = "org.kotlincrypto.core:mac", version.ref = "core" }
+
+# https://github.com/KotlinCrypto/hash
+hash-md5 = { module = "org.kotlincrypto.hash:md5", version.ref = "hash" }
+hash-sha1 = { module = "org.kotlincrypto.hash:sha1", version.ref = "hash" }
+hash-sha2 = { module = "org.kotlincrypto.hash:sha2", version.ref = "hash" }
+
+# https://github.com/KotlinCrypto/MACs
+macs-hmac-md5 = { module = "org.kotlincrypto.macs:hmac-md5", version.ref = "macs" }
+macs-hmac-sha1 = { module = "org.kotlincrypto.macs:hmac-sha1", version.ref = "macs" }
+macs-hmac-sha2 = { module = "org.kotlincrypto.macs:hmac-sha2", version.ref = "macs" }
+
+# https://github.com/KotlinCrypto/secure-random
+secureRandom = { module = "org.kotlincrypto:secure-random", version.ref = "secureRandom" }
