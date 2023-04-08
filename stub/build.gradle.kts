@@ -47,16 +47,23 @@ kmpConfiguration {
                     implementation(kotlincrypto.core.common)
                     implementation(kotlincrypto.core.digest)
                     implementation(kotlincrypto.core.mac)
+                    implementation(kotlincrypto.core.xof)
+
+                    implementation(kotlincrypto.endians.endians)
 
                     implementation(kotlincrypto.hash.md5)
                     implementation(kotlincrypto.hash.sha1)
                     implementation(kotlincrypto.hash.sha2)
+                    implementation(kotlincrypto.hash.sha3)
 
                     implementation(kotlincrypto.macs.hmac.md5)
                     implementation(kotlincrypto.macs.hmac.sha1)
                     implementation(kotlincrypto.macs.hmac.sha2)
+                    implementation(kotlincrypto.macs.hmac.sha3)
 
                     implementation(kotlincrypto.secureRandom)
+
+                    implementation(kotlincrypto.sponges.keccak)
                 }
             }
         }
