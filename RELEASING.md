@@ -83,8 +83,7 @@ gpg --card-status
         {
           "data": {
             "stagedRepositoryIds": [
-              "<repository id>",
-              "<repository id>"
+              "orgkotlincrypto-<id>"
             ],
             "autoDropAfterRelease": true
           }

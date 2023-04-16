@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## Version 0.2.4 (2023-04-16)
+ - Update `core` to `0.2.4`
+ - Update `hash` to `0.2.4`
+ - Update `macs` to `0.2.4`
+ - Add `macs-kmac`
+
 ## Version 0.2.3 (2023-04-08)
  - Update `core` to `0.2.3`
  - Update `hash` to `0.2.3`

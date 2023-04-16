@@ -60,6 +60,7 @@ kmpConfiguration {
                     implementation(kotlincrypto.macs.hmac.sha1)
                     implementation(kotlincrypto.macs.hmac.sha2)
                     implementation(kotlincrypto.macs.hmac.sha3)
+                    implementation(kotlincrypto.macs.kmac)
 
                     implementation(kotlincrypto.secureRandom)
 
