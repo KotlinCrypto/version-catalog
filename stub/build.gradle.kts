@@ -18,7 +18,7 @@ plugins {
 }
 
 kmpConfiguration {
-    configure {
+    this.configure {
         jvm {
             target { withJava() }
 
@@ -27,19 +27,19 @@ kmpConfiguration {
             compileTargetCompatibility = JavaVersion.VERSION_1_8
         }
 
-//        js()
+        js()
 //        wasm()
 //        wasmNativeAll()
-//
-//        androidNativeAll()
-//
-//        iosAll()
-//        macosAll()
-//        tvosAll()
-//        watchosAll()
-//
-//        linuxAll()
-//        mingwAll()
+
+        androidNativeAll()
+
+        iosAll()
+        macosAll()
+        tvosAll()
+        watchosAll()
+
+        linuxAll()
+        mingwAll()
 
         common {
             sourceSetMain {

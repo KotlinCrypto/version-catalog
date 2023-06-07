@@ -1,8 +1,8 @@
 [versions]
-core            = "0.2.4"
+core            = "0.2.5"
 endians         = "0.1.0"
-hash            = "0.2.4"
-macs            = "0.2.4"
+hash            = "0.2.5"
+macs            = "0.2.5"
 secureRandom    = "0.1.0"
 sponges         = "0.1.0"
 

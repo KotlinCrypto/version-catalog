@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## Version 0.2.5 (2023-06-07)
+ - Updates `core` to `0.2.5`
+ - Updates `hash` to `0.2.5`
+ - Updates `macs` to `0.2.5`
+
 ## Version 0.2.4 (2023-04-16)
  - Update `core` to `0.2.4`
  - Update `hash` to `0.2.4`
