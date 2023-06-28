@@ -1,8 +1,8 @@
 [versions]
-core            = "0.2.7"
+core            = "0.3.0"
 endians         = "0.1.0"
-hash            = "0.2.7"
-macs            = "0.2.7"
+hash            = "0.3.0"
+macs            = "0.3.0"
 secureRandom    = "0.1.0"
 sponges         = "0.1.0"
 
@@ -17,13 +17,13 @@ core-xof        = { module = "org.kotlincrypto.core:xof", version.ref = "core" }
 endians-endians = { module = "org.kotlincrypto.endians:endians", version.ref = "endians" }
 
 # https://github.com/KotlinCrypto/hash
-hash-md5        = { module = "org.kotlincrypto.hash:md5", version.ref = "hash" }
+hash-md         = { module = "org.kotlincrypto.hash:md", version.ref = "hash" }
 hash-sha1       = { module = "org.kotlincrypto.hash:sha1", version.ref = "hash" }
 hash-sha2       = { module = "org.kotlincrypto.hash:sha2", version.ref = "hash" }
 hash-sha3       = { module = "org.kotlincrypto.hash:sha3", version.ref = "hash" }
 
 # https://github.com/KotlinCrypto/MACs
-macs-hmac-md5   = { module = "org.kotlincrypto.macs:hmac-md5", version.ref = "macs" }
+macs-hmac-md    = { module = "org.kotlincrypto.macs:hmac-md", version.ref = "macs" }
 macs-hmac-sha1  = { module = "org.kotlincrypto.macs:hmac-sha1", version.ref = "macs" }
 macs-hmac-sha2  = { module = "org.kotlincrypto.macs:hmac-sha2", version.ref = "macs" }
 macs-hmac-sha3  = { module = "org.kotlincrypto.macs:hmac-sha3", version.ref = "macs" }
@@ -34,3 +34,13 @@ secureRandom    = { module = "org.kotlincrypto:secure-random", version.ref = "se
 
 # https://github.com/KotlinCrypto/sponges
 sponges-keccak  = { module = "org.kotlincrypto.sponges:keccak", version.ref = "sponges" }
+
+
+# ----- DEPRECATED -----
+# Will cease to be published next major version release and subsequently removed from the catalog
+#
+# Use instead:
+#     hash-md
+#     macs-hmac-md
+hash-md5        = { module = "org.kotlincrypto.hash:md5", version.ref = "hash" }
+macs-hmac-md5   = { module = "org.kotlincrypto.macs:hmac-md5", version.ref = "macs" }

@@ -51,12 +51,12 @@ kmpConfiguration {
 
                     implementation(kotlincrypto.endians.endians)
 
-                    implementation(kotlincrypto.hash.md5)
+                    implementation(kotlincrypto.hash.md)
                     implementation(kotlincrypto.hash.sha1)
                     implementation(kotlincrypto.hash.sha2)
                     implementation(kotlincrypto.hash.sha3)
 
-                    implementation(kotlincrypto.macs.hmac.md5)
+                    implementation(kotlincrypto.macs.hmac.md)
                     implementation(kotlincrypto.macs.hmac.sha1)
                     implementation(kotlincrypto.macs.hmac.sha2)
                     implementation(kotlincrypto.macs.hmac.sha3)

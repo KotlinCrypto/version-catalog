@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## Version 0.3.0 (2023-06-28)
+ - Updates `core` to `0.3.0`
+ - Updates `hash` to `0.3.0`
+ - Updates `macs` to `0.3.0`
+ - Add `hash-md`
+     - Replacement for `hash-md5`
+ - Add `macs-hmac-md`
+     - Replacement for `macs-hmac-md5`
+
 ## Version 0.2.7 (2023-06-09)
  - Updates `core` to `0.2.7`
  - Updates `hash` to `0.2.7`
