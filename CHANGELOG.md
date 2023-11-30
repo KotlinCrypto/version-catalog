@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## Version 0.4.0 (2023-11-30)
+ - Updates `core` to `0.4.0`
+ - Updates `endians` to `0.2.0`
+ - Updates `hash` to `0.4.0`
+ - Updates `macs` to `0.4.0`
+ - Updates `secureRandom` to `0.2.0`
+ - Updates `sponges` to `0.2.0`
+
 ## Version 0.3.0 (2023-06-28)
  - Updates `core` to `0.3.0`
  - Updates `hash` to `0.3.0`

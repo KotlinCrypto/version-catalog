@@ -18,7 +18,7 @@ plugins {
 }
 
 kmpConfiguration {
-    this.configure {
+    configure {
         jvm {
             target { withJava() }
 
@@ -28,8 +28,8 @@ kmpConfiguration {
         }
 
         js()
-//        wasm()
-//        wasmNativeAll()
+//        wasmJs {}
+//        wasmWasi {}
 
         androidNativeAll()
 
