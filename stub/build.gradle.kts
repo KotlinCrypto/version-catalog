@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.targets.js.dsl.ExperimentalWasmDsl
+
 /*
  * Copyright (c) 2023 Matthew Nelson
  *
@@ -28,8 +30,29 @@ kmpConfiguration {
         }
 
         js()
-//        wasmJs {}
-//        wasmWasi {}
+
+        @OptIn(ExperimentalWasmDsl::class)
+        wasmJs {
+            target {
+                browser {
+                    testTask {
+                        useMocha { timeout = "30s" }
+                    }
+                }
+                nodejs {
+                    testTask {
+                        useMocha { timeout = "30s" }
+                    }
+                }
+            }
+        }
+
+        @OptIn(ExperimentalWasmDsl::class)
+        wasmWasi {
+            target {
+                nodejs()
+            }
+        }
 
         androidNativeAll()
 
