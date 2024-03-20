@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## Version 0.5.2 (2024-03-20)
+ - Updates `secureRandom` to `0.3.1`
+
 ## Version 0.5.1 (2024-03-19)
  - Updates `core` to `0.5.1`
  - Updates `endians` to `0.3.0`
