@@ -17,11 +17,10 @@ import org.jetbrains.kotlin.gradle.targets.js.yarn.YarnPlugin
 import org.jetbrains.kotlin.gradle.targets.js.yarn.YarnRootExtension
 
 plugins {
-    alias(libs.plugins.multiplatform) apply(false)
+    alias(libs.plugins.kotlin.multiplatform) apply(false)
 }
 
 allprojects {
-
     findProperty("GROUP")?.let { group = it }
     findProperty("VERSION_NAME")?.let { version = it }
     findProperty("POM_DESCRIPTION")?.let { description = it.toString() }

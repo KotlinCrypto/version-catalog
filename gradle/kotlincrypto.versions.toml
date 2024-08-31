@@ -1,10 +1,10 @@
 [versions]
-core            = "0.5.1"
-endians         = "0.3.0"
-hash            = "0.5.1"
-macs            = "0.5.1"
-secureRandom    = "0.3.1"
-sponges         = "0.3.0"
+core            = "0.5.3"
+endians         = "0.3.1"
+hash            = "0.5.3"
+macs            = "0.5.3"
+secureRandom    = "0.3.2"
+sponges         = "0.3.1"
 
 [libraries]
 # https://github.com/KotlinCrypto/core

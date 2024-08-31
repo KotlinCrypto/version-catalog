@@ -1,5 +1,3 @@
-import org.jetbrains.kotlin.gradle.targets.js.dsl.ExperimentalWasmDsl
-
 /*
  * Copyright (c) 2023 Matthew Nelson
  *
@@ -15,15 +13,19 @@ import org.jetbrains.kotlin.gradle.targets.js.dsl.ExperimentalWasmDsl
  * See the License for the specific language governing permissions and
  * limitations under the License.
  **/
+import org.jetbrains.kotlin.gradle.targets.js.dsl.ExperimentalWasmDsl
+
 plugins {
     id("configuration")
 }
 
 kmpConfiguration {
     configure {
-        jvm {
-            target { withJava() }
+        options {
+            useUniqueModuleNames = true
+        }
 
+        jvm {
             kotlinJvmTarget = JavaVersion.VERSION_1_8
             compileSourceCompatibility = JavaVersion.VERSION_1_8
             compileTargetCompatibility = JavaVersion.VERSION_1_8
@@ -34,16 +36,8 @@ kmpConfiguration {
         @OptIn(ExperimentalWasmDsl::class)
         wasmJs {
             target {
-                browser {
-                    testTask {
-                        useMocha { timeout = "30s" }
-                    }
-                }
-                nodejs {
-                    testTask {
-                        useMocha { timeout = "30s" }
-                    }
-                }
+                browser()
+                nodejs()
             }
         }
 
