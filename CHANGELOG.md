@@ -1,12 +1,18 @@
 # CHANGELOG
 
+## Version 0.5.4 (2024-12-19)
+ - Updates `core` to `0.5.4`
+ - Updates `hash` to `0.5.4`
+ - Updates `macs` to `0.5.4`
+ - Updates `sponges` to `0.3.2`
+
 ## Version 0.5.3 (2024-08-31)
  - Updates `core` to `0.5.3`
  - Updates `endians` to `0.3.1`
  - Updates `hash` to `0.5.3`
  - Updates `macs` to `0.5.3`
  - Updates `secureRandom` to `0.3.2`
- - Updates `sponges` to `0.3.2`
+ - Updates `sponges` to `0.3.1`
 
 ## Version 0.5.2 (2024-03-20)
  - Updates `secureRandom` to `0.3.1`

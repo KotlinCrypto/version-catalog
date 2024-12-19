@@ -1,14 +1,14 @@
 [versions]
-core            = "0.5.3"
+core            = "0.5.4"
 endians         = "0.3.1"
-hash            = "0.5.3"
-macs            = "0.5.3"
+hash            = "0.5.4"
+macs            = "0.5.4"
 secureRandom    = "0.3.2"
-sponges         = "0.3.1"
+sponges         = "0.3.2"
 
 [libraries]
 # https://github.com/KotlinCrypto/core
-core-common     = { module = "org.kotlincrypto.core:common", version.ref = "core" }
+core-core       = { module = "org.kotlincrypto.core:core", version.ref = "core" }
 core-digest     = { module = "org.kotlincrypto.core:digest", version.ref = "core" }
 core-mac        = { module = "org.kotlincrypto.core:mac", version.ref = "core" }
 core-xof        = { module = "org.kotlincrypto.core:xof", version.ref = "core" }
@@ -40,7 +40,9 @@ sponges-keccak  = { module = "org.kotlincrypto.sponges:keccak", version.ref = "s
 # Will cease to be published next major version release and subsequently removed from the catalog
 #
 # Use instead:
+#     core-core
 #     hash-md
 #     macs-hmac-md
+core-common     = { module = "org.kotlincrypto.core:core", version.ref = "core" }
 hash-md5        = { module = "org.kotlincrypto.hash:md5", version.ref = "hash" }
 macs-hmac-md5   = { module = "org.kotlincrypto.macs:hmac-md5", version.ref = "macs" }
