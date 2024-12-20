@@ -61,7 +61,7 @@ kmpConfiguration {
         common {
             sourceSetMain {
                 dependencies {
-                    implementation(kotlincrypto.core.common)
+                    implementation(kotlincrypto.core.core)
                     implementation(kotlincrypto.core.digest)
                     implementation(kotlincrypto.core.mac)
                     implementation(kotlincrypto.core.xof)

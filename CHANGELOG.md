@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## Version 0.5.5 (2024-12-20)
+ - Updates `core` to `0.5.5`
+ - Updates `hash` to `0.5.5`
+ - Updates `macs` to `0.5.5`
+ - Updates `sponges` to `0.3.3`
+
 ## Version 0.5.4 (2024-12-19)
  - Updates `core` to `0.5.4`
  - Updates `hash` to `0.5.4`

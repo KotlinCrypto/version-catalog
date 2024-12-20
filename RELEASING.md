@@ -53,7 +53,7 @@ gpg --card-status
 - Perform a clean build
 ```bash
 ./gradlew clean
-./gradlew build
+./gradlew build --no-build-cache
 ```
 
 - Publish
