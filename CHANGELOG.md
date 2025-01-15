@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## Version 0.6.0 (2025-01-15)
+ - Adds `bitops-bits`
+ - Adds `bitops-endian`
+ - Adds `hash-blake2`
+ - Adds `macs-blake2`
+ - Updates `core` to `0.6.0`
+ - Updates `hash` to `0.6.0`
+ - Updates `macs` to `0.6.0`
+ - Updates `endians` to `0.3.2`
+ - Deprecates `endians-endians`
+     - Functionality replaced by `bitops-endian` library
+ - Removes `hash-md5`
+ - Removes `macs-hmac-md5`
+
 ## Version 0.5.6 (2024-12-28)
  - Updates `hash` to `0.5.6`
  - Updates `macs` to `0.5.6`

@@ -61,18 +61,21 @@ kmpConfiguration {
         common {
             sourceSetMain {
                 dependencies {
+                    implementation(kotlincrypto.bitops.bits)
+                    implementation(kotlincrypto.bitops.endian)
+
                     implementation(kotlincrypto.core.core)
                     implementation(kotlincrypto.core.digest)
                     implementation(kotlincrypto.core.mac)
                     implementation(kotlincrypto.core.xof)
 
-                    implementation(kotlincrypto.endians.endians)
-
+                    implementation(kotlincrypto.hash.blake2)
                     implementation(kotlincrypto.hash.md)
                     implementation(kotlincrypto.hash.sha1)
                     implementation(kotlincrypto.hash.sha2)
                     implementation(kotlincrypto.hash.sha3)
 
+                    implementation(kotlincrypto.macs.blake2)
                     implementation(kotlincrypto.macs.hmac.md)
                     implementation(kotlincrypto.macs.hmac.sha1)
                     implementation(kotlincrypto.macs.hmac.sha2)
