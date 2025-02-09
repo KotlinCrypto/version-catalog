@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## Version 0.6.1 (2025-02-09)
+ - Adds `error-error`
+ - Adds `random-crypto-rand`
+ - Updates `bitops` to `0.1.2`
+ - Updates `core` to `0.6.1`
+ - Updates `hash` to `0.6.1`
+ - Updates `macs` to `0.6.1`
+ - Updates `secureRandom` to `0.4.0`
+ - Deprecates `secureRandom`
+     - Functionality replaced by `random-crypto-rand` library
+
 ## Version 0.6.0 (2025-01-15)
  - Adds `bitops-bits`
  - Adds `bitops-endian`

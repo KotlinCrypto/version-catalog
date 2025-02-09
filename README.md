@@ -20,7 +20,7 @@ dependencyResolutionManagement {
     versionCatalogs {
         create("kotlincrypto") {
             // https://github.com/KotlinCrypto/version-catalog/blob/master/gradle/kotlincrypto.versions.toml
-            from("org.kotlincrypto:version-catalog:0.6.0")
+            from("org.kotlincrypto:version-catalog:0.6.1")
         }
     }
 }
@@ -45,12 +45,12 @@ dependencies {
     implementation(kotlincrypto.macs.hmac.sha3)
     implementation(kotlincrypto.macs.kmac)
 
-    implementation(kotlincrypto.secureRandom)
+    implementation(kotlincrypto.random.crypto.rand)
 }
 ```
 
 <!-- TAG_VERSION -->
-[badge-latest-release]: https://img.shields.io/badge/latest--release-0.6.0-blue.svg?style=flat
+[badge-latest-release]: https://img.shields.io/badge/latest--release-0.6.1-blue.svg?style=flat
 [badge-license]: https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat
 
 [url-latest-release]: https://github.com/KotlinCrypto/version-catalog/releases/latest

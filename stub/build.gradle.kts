@@ -69,6 +69,8 @@ kmpConfiguration {
                     implementation(kotlincrypto.core.mac)
                     implementation(kotlincrypto.core.xof)
 
+                    implementation(kotlincrypto.error.error)
+
                     implementation(kotlincrypto.hash.blake2)
                     implementation(kotlincrypto.hash.md)
                     implementation(kotlincrypto.hash.sha1)
@@ -82,7 +84,7 @@ kmpConfiguration {
                     implementation(kotlincrypto.macs.hmac.sha3)
                     implementation(kotlincrypto.macs.kmac)
 
-                    implementation(kotlincrypto.secureRandom)
+                    implementation(kotlincrypto.random.crypto.rand)
 
                     implementation(kotlincrypto.sponges.keccak)
                 }

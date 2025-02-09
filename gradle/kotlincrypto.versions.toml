@@ -1,49 +1,56 @@
 [versions]
-bitops          = "0.1.1"
-core            = "0.6.0"
-hash            = "0.6.0"
-macs            = "0.6.0"
-secureRandom    = "0.3.2"
-sponges         = "0.3.4"
+bitops              = "0.1.2"
+core                = "0.6.1"
+error               = "0.2.0"
+hash                = "0.6.1"
+macs                = "0.6.1"
+random              = "0.4.0"
+sponges             = "0.3.4"
+
 
 # ----- DEPRECATED -----
 # Will cease to be published next major version release and subsequently removed from the catalog
 #
 # Use instead:
 #     bitops-endian
-endians         = "0.3.2"
+#     random-crypto-rand
+endians             = "0.3.2"
+secureRandom        = "0.4.0"
 
 [libraries]
 # https://github.com/KotlinCrypto/bitops
-bitops-bits   = { module = "org.kotlincrypto.bitops:bits", version.ref = "bitops" }
-bitops-endian = { module = "org.kotlincrypto.bitops:endian", version.ref = "bitops" }
+bitops-bits         = { module = "org.kotlincrypto.bitops:bits", version.ref = "bitops" }
+bitops-endian       = { module = "org.kotlincrypto.bitops:endian", version.ref = "bitops" }
 
 # https://github.com/KotlinCrypto/core
-core-core       = { module = "org.kotlincrypto.core:core", version.ref = "core" }
-core-digest     = { module = "org.kotlincrypto.core:digest", version.ref = "core" }
-core-mac        = { module = "org.kotlincrypto.core:mac", version.ref = "core" }
-core-xof        = { module = "org.kotlincrypto.core:xof", version.ref = "core" }
+core-core           = { module = "org.kotlincrypto.core:core", version.ref = "core" }
+core-digest         = { module = "org.kotlincrypto.core:digest", version.ref = "core" }
+core-mac            = { module = "org.kotlincrypto.core:mac", version.ref = "core" }
+core-xof            = { module = "org.kotlincrypto.core:xof", version.ref = "core" }
+
+# https://github.com/KotlinCrypto/error
+error-error         = { module = "org.kotlincrypto:error", version.ref = "error" }
 
 # https://github.com/KotlinCrypto/hash
-hash-blake2     = { module = "org.kotlincrypto.hash:blake2", version.ref = "hash" }
-hash-md         = { module = "org.kotlincrypto.hash:md", version.ref = "hash" }
-hash-sha1       = { module = "org.kotlincrypto.hash:sha1", version.ref = "hash" }
-hash-sha2       = { module = "org.kotlincrypto.hash:sha2", version.ref = "hash" }
-hash-sha3       = { module = "org.kotlincrypto.hash:sha3", version.ref = "hash" }
+hash-blake2         = { module = "org.kotlincrypto.hash:blake2", version.ref = "hash" }
+hash-md             = { module = "org.kotlincrypto.hash:md", version.ref = "hash" }
+hash-sha1           = { module = "org.kotlincrypto.hash:sha1", version.ref = "hash" }
+hash-sha2           = { module = "org.kotlincrypto.hash:sha2", version.ref = "hash" }
+hash-sha3           = { module = "org.kotlincrypto.hash:sha3", version.ref = "hash" }
 
 # https://github.com/KotlinCrypto/MACs
-macs-blake2     = { module = "org.kotlincrypto.macs:blake2", version.ref = "macs" }
-macs-hmac-md    = { module = "org.kotlincrypto.macs:hmac-md", version.ref = "macs" }
-macs-hmac-sha1  = { module = "org.kotlincrypto.macs:hmac-sha1", version.ref = "macs" }
-macs-hmac-sha2  = { module = "org.kotlincrypto.macs:hmac-sha2", version.ref = "macs" }
-macs-hmac-sha3  = { module = "org.kotlincrypto.macs:hmac-sha3", version.ref = "macs" }
-macs-kmac       = { module = "org.kotlincrypto.macs:kmac", version.ref = "macs" }
+macs-blake2         = { module = "org.kotlincrypto.macs:blake2", version.ref = "macs" }
+macs-hmac-md        = { module = "org.kotlincrypto.macs:hmac-md", version.ref = "macs" }
+macs-hmac-sha1      = { module = "org.kotlincrypto.macs:hmac-sha1", version.ref = "macs" }
+macs-hmac-sha2      = { module = "org.kotlincrypto.macs:hmac-sha2", version.ref = "macs" }
+macs-hmac-sha3      = { module = "org.kotlincrypto.macs:hmac-sha3", version.ref = "macs" }
+macs-kmac           = { module = "org.kotlincrypto.macs:kmac", version.ref = "macs" }
 
-# https://github.com/KotlinCrypto/secure-random
-secureRandom    = { module = "org.kotlincrypto:secure-random", version.ref = "secureRandom" }
+# https://github.com/KotlinCrypto/random
+random-crypto-rand  = { module = "org.kotlincrypto.random:crypto-rand", version.ref = "random" }
 
 # https://github.com/KotlinCrypto/sponges
-sponges-keccak  = { module = "org.kotlincrypto.sponges:keccak", version.ref = "sponges" }
+sponges-keccak      = { module = "org.kotlincrypto.sponges:keccak", version.ref = "sponges" }
 
 
 # ----- DEPRECATED -----
@@ -52,5 +59,7 @@ sponges-keccak  = { module = "org.kotlincrypto.sponges:keccak", version.ref = "s
 # Use instead:
 #     core-core
 #     bitops-endian
-core-common     = { module = "org.kotlincrypto.core:core", version.ref = "core" }
-endians-endians = { module = "org.kotlincrypto.endians:endians", version.ref = "endians" }
+#     random-crypto-rand
+core-common         = { module = "org.kotlincrypto.core:core", version.ref = "core" }
+endians-endians     = { module = "org.kotlincrypto.endians:endians", version.ref = "endians" }
+secureRandom        = { module = "org.kotlincrypto:secure-random", version.ref = "secureRandom" }
