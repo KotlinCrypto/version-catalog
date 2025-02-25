@@ -1,11 +1,11 @@
 [versions]
-bitops              = "0.1.2"
-core                = "0.6.1"
-error               = "0.2.0"
-hash                = "0.6.1"
-macs                = "0.6.1"
-random              = "0.4.0"
-sponges             = "0.3.4"
+bitops              = "0.2.0"
+core                = "0.7.0"
+error               = "0.3.0"
+hash                = "0.7.0"
+macs                = "0.7.0"
+random              = "0.5.0"
+sponges             = "0.4.0"
 
 
 # ----- DEPRECATED -----

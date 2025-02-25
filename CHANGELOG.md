@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## Version 0.7.0 (2025-02-25)
+ - Updates `bitops` to `0.2.0`
+ - Updates `core` to `0.7.0`
+ - Updates `error` to `0.3.0`
+ - Updates `hash` to `0.7.0`
+ - Updates `macs` to `0.7.0`
+ - Updates `random` to `0.5.0`
+ - Updates `sponges` to `0.4.0`
+
 ## Version 0.6.1 (2025-02-09)
  - Adds `error-error`
  - Adds `random-crypto-rand`
