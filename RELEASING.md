@@ -38,16 +38,9 @@ mavenCentralPassword=MyPassword
 
 - Make sure you have GPG gradle config setup in `~/.gradle/gradle.properties` for signing
 ```
-signing.gnupg.executable=gpg
-signing.gnupg.useLegacyGpg=true
-signing.gnupg.homeDir=/path/to/.gnupg/
-signing.gnupg.optionsFile=/path/to/.gnupg/gpg.conf
-signing.gnupg.keyName=0x61471B8AB3890961
-```
-
-- Make sure GPG is picking up YubiKey to sign releases
-```bash
-gpg --card-status
+signing.keyId=MyGPGKeyId
+signing.password=MyGPGKeyPassword
+signing.secretKeyRingFile=/path/to/.gnupg/MyGPGKey.gpg
 ```
 
 - Perform a clean build
