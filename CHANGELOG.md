@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## Version 0.7.1 (2025-05-26)
+ - Updates `random` to `0.5.1`
+
 ## Version 0.7.0 (2025-02-25)
  - Updates `bitops` to `0.2.0`
  - Updates `core` to `0.7.0`
