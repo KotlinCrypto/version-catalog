@@ -15,6 +15,8 @@
  **/
 import org.jetbrains.kotlin.gradle.targets.js.yarn.YarnPlugin
 import org.jetbrains.kotlin.gradle.targets.js.yarn.YarnRootExtension
+import org.jetbrains.kotlin.gradle.targets.wasm.yarn.WasmYarnPlugin
+import org.jetbrains.kotlin.gradle.targets.wasm.yarn.WasmYarnRootExtension
 
 plugins {
     alias(libs.plugins.kotlin.multiplatform) apply(false)
@@ -32,11 +34,19 @@ allprojects {
             // Only allow snapshot dependencies for non-release versions.
             // This would cause a build failure if attempting to make a release
             // while depending on a -SNAPSHOT version (such as core).
-            maven("https://s01.oss.sonatype.org/content/repositories/snapshots/")
+            maven("https://central.sonatype.com/repository/maven-snapshots/")
         }
     }
 }
 
 plugins.withType<YarnPlugin> {
-    the<YarnRootExtension>().lockFileDirectory = rootDir.resolve(".kotlin-js-store")
+    the<YarnRootExtension>().apply {
+        lockFileDirectory = rootDir.resolve(".kotlin-js-store").resolve("js")
+    }
+}
+
+plugins.withType<WasmYarnPlugin> {
+    the<WasmYarnRootExtension>().apply {
+        lockFileDirectory = rootDir.resolve(".kotlin-js-store").resolve("wasm")
+    }
 }

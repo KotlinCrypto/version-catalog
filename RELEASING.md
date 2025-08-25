@@ -1,4 +1,4 @@
-# Releasing
+# RELEASING
 
 - Ensure java version is greater than or equal to 11
 ```bash
@@ -57,29 +57,13 @@ signing.secretKeyRingFile=/path/to/.gnupg/MyGPGKey.gpg
 - The [gradle-maven-publish-plugin](https://github.com/vanniktech/gradle-maven-publish-plugin) should have automatically
   closed the staged repositories, but if it did not:
     - Close publications (Don't release yet)
-        - Login to Sonatype OSS Nexus: [oss.sonatype.org](https://s01.oss.sonatype.org/#stagingRepositories)
+        - LLogin to Central Portal: [central.sonatype.org](https://central.sonatype.com/publishing/deployments)
         - Click on **Staging Repositories**
         - Select all Publications
         - Click **Close** then **Confirm**
         - Wait a bit, hit **Refresh** until the *Status* changes to *Closed*
 
-- **Release** publications from Sonatype OSS Nexus StagingRepositories manager
-    - Alternatively, can use Curl with the given repository id's that were output
-      to terminal when publishing, e.g. `orgkotlincrypto-1018`
-      ```shell
-      curl -v -u "<USER NAME>" \
-        -H "Content-Type: application/json" \
-        -H "Accept: application/json" \
-        https://s01.oss.sonatype.org/service/local/staging/bulk/promote --data '
-        {
-          "data": {
-            "stagedRepositoryIds": [
-              "orgkotlincrypto-<id>"
-            ],
-            "autoDropAfterRelease": true
-          }
-        }'
-      ```
+- **Release** publications from Central Portal UI at [central.sonatype.com](https://central.sonatype.com/publishing/deployments)
 
 - Merge release branch to `master`
 ```bash

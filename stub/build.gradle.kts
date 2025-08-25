@@ -25,11 +25,7 @@ kmpConfiguration {
             useUniqueModuleNames = true
         }
 
-        jvm {
-            kotlinJvmTarget = JavaVersion.VERSION_1_8
-            compileSourceCompatibility = JavaVersion.VERSION_1_8
-            compileTargetCompatibility = JavaVersion.VERSION_1_8
-        }
+        jvm()
 
         js()
 

@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## Version 0.7.2 (2025-08-25)
+ - Updates `bitops` to `0.2.1`
+ - Updates `core` to `0.7.1`
+ - Updates `error` to `0.3.1`
+ - Updates `hash` to `0.7.1`
+ - Updates `macs` to `0.7.1`
+ - Updates `random` to `0.5.2`
+ - Updates `sponges` to `0.4.1`
+
 ## Version 0.7.1 (2025-05-26)
  - Updates `random` to `0.5.1`
 
