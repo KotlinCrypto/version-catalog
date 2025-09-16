@@ -4,7 +4,7 @@ core                = "0.7.1"
 error               = "0.4.0-SNAPSHOT"
 hash                = "0.7.1"
 macs                = "0.7.1"
-random              = "0.5.2"
+random              = "0.6.0-SNAPSHOT"
 sponges             = "0.5.0-SNAPSHOT"
 
 
