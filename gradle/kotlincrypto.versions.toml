@@ -1,6 +1,6 @@
 [versions]
 bitops              = "0.3.0-SNAPSHOT"
-core                = "0.7.1"
+core                = "0.8.0-SNAPSHOT"
 error               = "0.4.0-SNAPSHOT"
 hash                = "0.7.1"
 macs                = "0.7.1"
