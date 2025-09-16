@@ -2,7 +2,7 @@
 bitops              = "0.3.0-SNAPSHOT"
 core                = "0.8.0-SNAPSHOT"
 error               = "0.4.0-SNAPSHOT"
-hash                = "0.7.1"
+hash                = "0.8.0-SNAPSHOT"
 macs                = "0.7.1"
 random              = "0.6.0-SNAPSHOT"
 sponges             = "0.5.0-SNAPSHOT"
