@@ -1,21 +1,11 @@
 [versions]
-bitops              = "0.2.1"
-core                = "0.7.1"
-error               = "0.3.1"
-hash                = "0.7.1"
-macs                = "0.7.1"
-random              = "0.5.2"
-sponges             = "0.4.1"
-
-
-# ----- DEPRECATED -----
-# Will cease to be published next major version release and subsequently removed from the catalog
-#
-# Use instead:
-#     bitops-endian
-#     random-crypto-rand
-endians             = "0.3.2"
-secureRandom        = "0.4.0"
+bitops              = "0.3.0-SNAPSHOT"
+core                = "0.8.0-SNAPSHOT"
+error               = "0.4.0-SNAPSHOT"
+hash                = "0.8.0-SNAPSHOT"
+macs                = "0.8.0-SNAPSHOT"
+random              = "0.6.0-SNAPSHOT"
+sponges             = "0.5.0-SNAPSHOT"
 
 [libraries]
 # https://github.com/KotlinCrypto/bitops
@@ -51,15 +41,3 @@ random-crypto-rand  = { module = "org.kotlincrypto.random:crypto-rand", version.
 
 # https://github.com/KotlinCrypto/sponges
 sponges-keccak      = { module = "org.kotlincrypto.sponges:keccak", version.ref = "sponges" }
-
-
-# ----- DEPRECATED -----
-# Will cease to be published next major version release and subsequently removed from the catalog
-#
-# Use instead:
-#     core-core
-#     bitops-endian
-#     random-crypto-rand
-core-common         = { module = "org.kotlincrypto.core:core", version.ref = "core" }
-endians-endians     = { module = "org.kotlincrypto.endians:endians", version.ref = "endians" }
-secureRandom        = { module = "org.kotlincrypto:secure-random", version.ref = "secureRandom" }
