@@ -1,5 +1,20 @@
 # CHANGELOG
 
+## Version 0.8.0 (2025-09-19)
+ - Updates `bitops` to `0.3.0`
+ - Updates `core` to `0.8.0`
+ - Updates `error` to `0.4.0`
+ - Updates `hash` to `0.8.0`
+ - Updates `macs` to `0.8.0`
+ - Updates `random` to `0.6.0`
+ - Updates `sponges` to `0.5.0`
+ - Removes deprecated libraries/versions
+     - version `endians`
+     - version `secureRandom`
+     - library `core-common`
+     - library `endians-endians`
+     - library `secureRandom`
+
 ## Version 0.7.2 (2025-08-25)
  - Updates `bitops` to `0.2.1`
  - Updates `core` to `0.7.1`
@@ -43,8 +58,9 @@
  - Updates `endians` to `0.3.2`
  - Deprecates `endians-endians`
      - Functionality replaced by `bitops-endian` library
- - Removes `hash-md5`
- - Removes `macs-hmac-md5`
+ - Removes deprecated libraries
+     - library `hash-md5`
+     - library `macs-hmac-md5`
 
 ## Version 0.5.6 (2024-12-28)
  - Updates `hash` to `0.5.6`
@@ -94,16 +110,16 @@
  - Updates `core` to `0.3.0`
  - Updates `hash` to `0.3.0`
  - Updates `macs` to `0.3.0`
- - Add `hash-md`
+ - Adds `hash-md`
      - Replacement for `hash-md5`
- - Add `macs-hmac-md`
+ - Adds `macs-hmac-md`
      - Replacement for `macs-hmac-md5`
 
 ## Version 0.2.7 (2023-06-09)
  - Updates `core` to `0.2.7`
  - Updates `hash` to `0.2.7`
  - Updates `macs` to `0.2.7`
- - 
+
 ## Version 0.2.6 (2023-06-08)
  - Updates `core` to `0.2.6`
  - Updates `hash` to `0.2.6`
@@ -118,17 +134,17 @@
  - Update `core` to `0.2.4`
  - Update `hash` to `0.2.4`
  - Update `macs` to `0.2.4`
- - Add `macs-kmac`
+ - Adds `macs-kmac`
 
 ## Version 0.2.3 (2023-04-08)
  - Update `core` to `0.2.3`
  - Update `hash` to `0.2.3`
  - Update `macs` to `0.2.3`
- - Add `core-xof`
- - Add `hash-sha3`
- - Add `macs-hmac-sha3`
- - Add `endians-endians`
- - Add `sponges-keccak`
+ - Adds `core-xof`
+ - Adds `hash-sha3`
+ - Adds `macs-hmac-sha3`
+ - Adds `endians-endians`
+ - Adds `sponges-keccak`
 
 ## Version 0.2.1 (2023-03-29)
  - Initial Release
